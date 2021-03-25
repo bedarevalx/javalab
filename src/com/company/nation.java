@@ -18,6 +18,14 @@ public class nation {
         population = b;
         millitarypow = c;
     }
+    boolean surrend() {
+        System.out.println("Государство " + title + " сдалось");
+        this.surrender=true;
+        return true;
+    }
+    void endwar() {
+        score = population * millitarypow;
+    }
     String title;
     int population;
     double score;
