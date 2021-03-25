@@ -6,4 +6,10 @@ public class enemy extends nation {
         millitarypow += 1;
         population *= 0.7;
     }
+    void Display() {
+        System.out.println("Информация о государстве " + title);
+        System.out.println("Популяция - " + population);
+        System.out.println("Военная мощь - " + millitarypow);
+        System.out.println("Тип государства - Военное");
+    }
 }

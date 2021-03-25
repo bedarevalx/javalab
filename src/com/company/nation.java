@@ -17,6 +17,7 @@ public class nation {
         title += " Empire";
         population = b;
         millitarypow = c;
+
     }
     boolean surrend() {
         System.out.println("Государство " + title + " сдалось");
