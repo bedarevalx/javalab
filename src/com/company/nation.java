@@ -27,6 +27,13 @@ public class nation {
     void endwar() {
         score = population * millitarypow;
     }
+    static int counter = 0;
+    static void discounter(){
+        System.out.println("В войне участвует " + counter + " государств");
+        System.out.println("***********Начало войны***********");
+        System.out.println("\nУ государств еще есть возможность этого избежать, если\n одно из государств сдастся");
+    }
+
     String title;
     int population;
     double score;
