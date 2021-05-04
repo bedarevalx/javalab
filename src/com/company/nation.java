@@ -1,7 +1,5 @@
 package com.company;
-
 import java.util.Scanner;
-
 public class nation {
     Scanner in = new Scanner(System.in);
     void Read() {
@@ -12,18 +10,12 @@ public class nation {
         System.out.println("Введите военную мощь (=<2):");
         millitarypow = in.nextDouble();
     }
-    void Init(String a, int b, double c) {
-        title = a;
-        title += " Empire";
-        population = b;
-        millitarypow = c;
-
-    }
     boolean surrend() {
         System.out.println("Государство " + title + " сдалось");
         this.surrender=true;
         return true;
     }
+    public nation(){}
     void endwar() {
         score = population * millitarypow;
     }

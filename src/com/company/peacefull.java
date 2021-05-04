@@ -12,4 +12,16 @@ public class peacefull extends nation {
         System.out.println("Военная мощь - " + millitarypow);
         System.out.println("Тип государства - Дружелюбное");
     }
+    public peacefull(String name,int populate,double milit){
+        this.title=name;
+        this.population=populate;
+        this.millitarypow=milit;
+        nation.counter++;
+    }
+    public peacefull(){
+        this.title="Greece";
+        this.population=12000;
+        this.millitarypow=1.2;
+        nation.counter++;
+    }
 }

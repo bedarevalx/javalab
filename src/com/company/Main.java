@@ -1,20 +1,11 @@
 package com.company;
-
 import java.util.Scanner;
-
 public class Main {
-
     public static void main(String[] args) {
         peacefull[] one = new peacefull[2];
-        one[0] = new peacefull();
-        nation.counter++;
+        one[0] = new peacefull("Rome", 11000, 1.1);
         one[1] = new peacefull();
-        nation.counter++;
-        enemy two = new enemy();
-        nation.counter++;
-        one[0].Read();
-        two.Init("Rome", 11000, 1.1);
-        one[1].Init("Greece",12000,1.2);
+        enemy two = new enemy("Italy");
         one[0].Display();
         one[1].Display();
         two.Display();
