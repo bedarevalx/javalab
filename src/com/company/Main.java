@@ -1,11 +1,32 @@
 package com.company;
 import java.util.Scanner;
 public class Main {
+    static String instring(){
+        Scanner in = new Scanner(System.in);
+        String titlein="";
+        int p=0;
+        Exception e1 = new Exception("");
+        while (p==0){
+            p=1;
+            System.out.println("Введите название государства: ");
+            titlein = in.nextLine();
+            try {
+                for(char c: titlein.toCharArray()){
+                    if(Character.isDigit(c)) throw e1 = new Exception("Строка введена неверно, повторите ввод\n");
+                }
+            }
+            catch (Exception e){
+                System.out.println(e);
+                p=0;
+            }
+        }
+        return titlein;
+    }
     public static void main(String[] args) {
         peacefull[] one = new peacefull[2];
         one[0] = new peacefull("Rome", 11000, 1.1);
         one[1] = new peacefull();
-        enemy two = new enemy("Italy");
+        enemy two = new enemy(instring());
         one[0].Display();
         one[1].Display();
         two.Display();
